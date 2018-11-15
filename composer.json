@@ -1,0 +1,28 @@
+{
+    "name": "pierre-dargham/classicpress-composer-boilerplate",
+    "type": "project",
+    "minimum-stability" :"dev",
+    "repositories": [
+        {
+            "type": "composer",
+            "url": "https://wpackagist.org"
+        },
+        {
+            "type": "vcs",
+            "url": "ssh://git@github.com/ClassyBot/ClassicPress-nightly.git"
+        }
+    ],
+    "require": {
+        "classicpress/classicpress": "*",
+        "composer/installers": "^1.5.0",
+        "wpackagist-theme/twentyseventeen" : "^1.7.0"
+    },
+    "extra": {
+        "wordpress-install-dir": "wp",
+        "installer-paths": {
+            "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
+            "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],
+            "wp-content/themes/{$name}/": ["type:wordpress-theme"]
+        }
+    }
+}

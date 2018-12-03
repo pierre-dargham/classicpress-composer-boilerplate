@@ -95,5 +95,8 @@ define('WP_DEBUG', false);
 if ( !defined('ABSPATH') )
 	define('ABSPATH', dirname(__FILE__) . '/wp/');
 
+/** Require composer autoload file */
+require_once __DIR__ . '/vendor/autoload.php';
+
 /** Sets up ClassicPress vars and included files. */
 require_once(ABSPATH . 'wp-settings.php');

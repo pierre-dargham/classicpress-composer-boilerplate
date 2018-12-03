@@ -1,9 +1,13 @@
 # ClassicPress composer boilerplate
 
+This boilerplate shows the minimal steps required to start a composer project based on [ClassicPress](https://www.classicpress.net/).
+
+Default dependencies are [ClassicPress core last release](https://github.com/ClassicPress/ClassicPress-release) and [Twenty Seventeen theme](https://wordpress.org/themes/twentyseventeen/).
+
 ## Requirements
 
 * PHP >= 5.3
-* Composer - [Install](https://getcomposer.org/doc/00-intro.md#installation-linux-unix-osx)
+* [Composer](https://getcomposer.org/)
 
 ## Installation
 
@@ -15,9 +19,14 @@
 
 ## Further steps
 
-- If you are using a VCS, like git or svn, you may want to ignore thoses files :
+- If you are using a VCS, like git or svn, you sould ignore those files :
 ```
 - /vendor
 - /wp
 - /wp-content/themes/twentyseventeen
 ```
+
+## WordPress plugins and theme
+
+- You can install and manage WordPress plugins and theme using composer, thanks to composer miror repository [wpackagist](https://wpackagist.org/).
+- If you require WordPress plugins and theme using composer, you should ignore them in your VCS, like any other dependency.

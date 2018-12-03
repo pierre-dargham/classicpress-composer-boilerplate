@@ -19,7 +19,7 @@ Default dependencies are [ClassicPress core last release](https://github.com/Cla
 
 ## Further steps
 
-- If you are using a VCS, like git or svn, you sould ignore those files :
+- If you are using a VCS, like git or svn, you should ignore those files :
 ```
 - /vendor
 - /wp

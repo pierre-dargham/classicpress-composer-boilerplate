@@ -93,7 +93,7 @@ define('WP_DEBUG', false);
 
 /** Absolute path to the ClassicPress directory. */
 if ( !defined('ABSPATH') )
-	define('ABSPATH', dirname(__FILE__) . '/wp/');
+	define('ABSPATH', dirname(__FILE__) . '/classicpress/');
 
 /** Require composer autoload file */
 require_once __DIR__ . '/vendor/autoload.php';

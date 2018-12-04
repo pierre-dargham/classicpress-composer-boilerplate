@@ -11,22 +11,57 @@ Default dependencies are [ClassicPress core last release](https://github.com/Cla
 
 ## Installation
 
-1. Run in command line : `git clone git@github.com:pierre-dargham/classicpress-composer-boilerplate.git my-project && cd my-project && rm -rf .git`
+1. Run in command line : `composer create-project --remove-vcs pierre-dargham/classicpress-composer-boilerplate my-project && cd my-project`
 2. In wp-config.php, edit following constants : `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST`, and `WP_HOME`
 3. Run in command line : `composer install`
 4. Create your database
 5. Go to your site home url, and follow standard ClassicPress install steps
 
+**Note:** Your site administration area will be available at `/classicpress/wp-admin/` instead of `/wp-admin/`
+
 ## Further steps
 
-- If you are using a VCS, like git or svn, you should ignore those files :
+### Versionning
+
+If you are using a VCS, like git or svn, you should ignore those files :
 ```
 - /vendor
 - /wp
 - /wp-content/themes/twentyseventeen
 ```
 
-## WordPress plugins and theme
+### WordPress plugins and theme
 
-- You can install and manage WordPress plugins and theme using composer, thanks to composer miror repository [wpackagist](https://wpackagist.org/).
-- If you require WordPress plugins and theme using composer, you should ignore them in your VCS, like any other dependency.
+You can install and manage WordPress plugins and theme using composer, thanks to composer miror repository [wpackagist](https://wpackagist.org/). If you require WordPress plugins and theme using composer, you should ignore them in your VCS also, like any other dependency.
+
+```
+
+### Nightly builds
+
+If you want to install ClassicPress nightly builds instead of stable releases, you have to modify the composer.json file :
+
+- Add `"minimum-stability" :"dev"`
+- Add the following repository : `"type": "vcs", "url": "ssh://git@github.com/ClassyBot/ClassicPress-nightly.git"`
+
+You should now have a section like that :
+```
+"minimum-stability" :"dev",
+"repositories": [
+    {
+        "type": "composer",
+        "url": "https://wpackagist.org"
+    },
+    {
+        "type": "vcs",
+        "url": "ssh://git@github.com/ClassyBot/ClassicPress-nightly.git"
+    }
+],
+```
+
+- Run `composer update classicpress/classicpress` to download the last nightly build
+
+## Related links
+
+- https://getcomposer.org/
+- https://roots.io/using-composer-with-wordpress/
+- https://composer.rarst.net/

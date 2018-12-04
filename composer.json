@@ -6,10 +6,6 @@
         {
             "type": "composer",
             "url": "https://wpackagist.org"
-        },
-        {
-            "type": "vcs",
-            "url": "ssh://git@github.com/ClassyBot/ClassicPress-nightly.git"
         }
     ],
     "require": {
@@ -18,7 +14,7 @@
         "wpackagist-theme/twentyseventeen" : "^1.7.0"
     },
     "extra": {
-        "wordpress-install-dir": "wp",
+        "wordpress-install-dir": "classicpress",
         "installer-paths": {
             "wp-content/mu-plugins/{$name}/": ["type:wordpress-muplugin"],
             "wp-content/plugins/{$name}/": ["type:wordpress-plugin"],

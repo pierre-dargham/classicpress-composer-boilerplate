@@ -34,6 +34,13 @@ If you are using a VCS, like git or svn, you should ignore those files :
 
 You can install and manage WordPress plugins and theme using composer, thanks to composer miror repository [wpackagist](https://wpackagist.org/). If you require WordPress plugins and theme using composer, you should ignore them in your VCS also, like any other dependency.
 
+### Automatic updates
+
+Automatic updates are disabled by default in this boilerplate [wp-config.php](https://github.com/pierre-dargham/classicpress-composer-boilerplate/blob/master/wp-config.php), because you dependencies update should be handled using Composer. If you need to change that, you can update the two following constants :
+```
+/* Automatic updates */
+define('WP_AUTO_UPDATE_CORE', false);
+define('AUTOMATIC_UPDATER_DISABLED', true);
 ```
 
 ### Nightly builds

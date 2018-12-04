@@ -47,6 +47,10 @@ define('WP_SITEURL', WP_HOME . '/wp');
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content');
 define('WP_CONTENT_URL', WP_HOME . '/wp-content');
 
+/* Automatic updates */
+define('WP_AUTO_UPDATE_CORE', false);
+define('AUTOMATIC_UPDATER_DISABLED', true);
+
 /**#@+
  * Authentication Unique Keys and Salts.
  *

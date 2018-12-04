@@ -41,7 +41,7 @@ define('DB_COLLATE', '');
 define('WP_HOME', 'http://example.com');
 
 /** Full URL to ClassicPress, including subdirectory url */
-define('WP_SITEURL', WP_HOME . '/wp');
+define('WP_SITEURL', WP_HOME . '/classicpress');
 
 /* Custom wp-content directory */
 define('WP_CONTENT_DIR', dirname( __FILE__ ) . '/wp-content');

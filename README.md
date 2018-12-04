@@ -14,11 +14,10 @@ Default dependencies are [ClassicPress core last release](https://github.com/Cla
 
 ## Installation
 
-1. Run in command line : `composer create-project --remove-vcs pierre-dargham/classicpress-composer-boilerplate my-project && cd my-project`
-2. In wp-config.php, edit following constants : `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST`, and `WP_HOME`
-3. Run in command line : `composer install`
-4. Create your database
-5. Go to your site home url, and follow standard ClassicPress install steps
+1. Run in command line : `composer create-project --remove-vcs pierre-dargham/classicpress-composer-boilerplate my-project`
+2. Create an empty database
+3. In wp-config.php, edit following constants : `WP_HOME`, `DB_NAME`, `DB_USER`, `DB_PASSWORD`, `DB_HOST`
+4. Go to your site home url, and follow standard ClassicPress install steps
 
 **Note:** Your site administration area will be available at `/classicpress/wp-admin/` instead of `/wp-admin/`
 

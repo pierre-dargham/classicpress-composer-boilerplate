@@ -1,5 +1,7 @@
 {
     "name": "pierre-dargham/classicpress-composer-boilerplate",
+    "license": "GPL-2.0-or-later",
+    "homepage": "https://www.classicpress.net/",
     "type": "project",
     "minimum-stability" :"dev",
     "repositories": [

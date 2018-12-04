@@ -1,3 +1,6 @@
+[![Latest Stable Version](https://poser.pugx.org/pierre-dargham/classicpress-composer-boilerplate/v/stable)](https://packagist.org/packages/pierre-dargham/classicpress-composer-boilerplate)
+[![License](https://poser.pugx.org/pierre-dargham/classicpress-composer-boilerplate/license)](https://www.gnu.org/licenses/old-licenses/gpl-2.0.en.html)
+
 # ClassicPress composer boilerplate
 
 This boilerplate shows the minimal steps required to start a composer project based on [ClassicPress](https://www.classicpress.net/).

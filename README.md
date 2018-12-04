@@ -36,7 +36,7 @@ You can install and manage WordPress plugins and theme using composer, thanks to
 
 ### Automatic updates
 
-Automatic updates are disabled by default in this boilerplate [wp-config.php](https://github.com/pierre-dargham/classicpress-composer-boilerplate/blob/master/wp-config.php), because you dependencies update should be handled using Composer. If you need to change that, you can update the two following constants :
+Automatic updates are disabled by default in this boilerplate [wp-config.php](https://github.com/pierre-dargham/classicpress-composer-boilerplate/blob/master/wp-config.php), because you dependencies updates should be handled using Composer. If you need to change that, you can update the two following constants :
 ```
 /* Automatic updates */
 define('WP_AUTO_UPDATE_CORE', false);
@@ -45,7 +45,7 @@ define('AUTOMATIC_UPDATER_DISABLED', true);
 
 ### Nightly builds
 
-If you want to install ClassicPress nightly builds instead of stable releases, you have to modify the composer.json file :
+If you want to install ClassicPress nightly builds instead of stable releases, you have to modify the `composer.json` file :
 
 - Add `"minimum-stability" :"dev"`
 - Add the following repository : `"type": "vcs", "url": "ssh://git@github.com/ClassyBot/ClassicPress-nightly.git"`
@@ -70,5 +70,6 @@ You should now have a section like that :
 ## Related links
 
 - https://getcomposer.org/
+- https://docs.classicpress.net/installing-classicpress/installing-with-composer/
 - https://roots.io/using-composer-with-wordpress/
 - https://composer.rarst.net/
